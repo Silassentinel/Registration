@@ -13,3 +13,11 @@ npm install expo-app-loading @react-navigation/native @react-navigation/stack @r
 
 
 expo install @react-native-async-storage/async-storage react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view @react-native-community/slider @react-native-picker/picker expo-camera expo-contacts expo-image-picker expo-location expo-sensors react-native-maps react-native-webview firebase expo-notifications
+
+
+--- 
+
+1 big IMG
+2 Text elements
+1 input field
+1 button

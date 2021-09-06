@@ -1,14 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
+import HeaderBanner from "./src/components/HeaderBanner";
 import styles from "./src/Stylez/StyleSheet";
+import Registration from "./src/views/Registration";
 
 export default function App() {
   return (
+    <SafeAreaView>
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <HeaderBanner/>
+      <Registration/>
+      {/*FOOTER*/}
     </View>
+    </SafeAreaView>
   );
 }
 
