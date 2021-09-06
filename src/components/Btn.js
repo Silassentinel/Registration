@@ -1,14 +1,18 @@
 import React from 'react'
-import { View, Button } from 'react-native'
+import { Text } from "react-native-elements";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import styles from "../Stylez/StyleSheet";
 
 const Btn = ({data}) => {
     return (
-        <View>
-            <Button 
-            title="Click me" 
+        <>
+            <TouchableOpacity 
+            style={styles.BtnStyle}
             onPress={() => alert(data.text)}
-            />
-        </View>
+            >
+                <Text>Registreer je hier!</Text>
+            </TouchableOpacity>
+        </>
     )
 }
 

@@ -1,16 +1,14 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import Btn from "../components/Btn";
+import { View, useWindowDimensions } from 'react-native'
 import HeaderBanner from "../components/HeaderBanner";
 import ImgComp from "../components/ImgComp";
-import Input from "../components/Input";
-import TextElement from "../components/TextElement";
+import styles from "../Stylez/StyleSheet";
 
 const Registration = () => {
+    const { width, height } = useWindowDimensions();
     return (
-        <View>
+        <View style={styles.imgContainer}>
             <ImgComp/>
-            
         </View>
     )
 }

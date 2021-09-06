@@ -1,18 +1,16 @@
 import React from 'react';
-import { View, SafeAreaView } from 'react-native';
-import HeaderBanner from "./src/components/HeaderBanner";
+import { View, SafeAreaView, useWindowDimensions } from 'react-native';
 import styles from "./src/Stylez/StyleSheet";
 import Registration from "./src/views/Registration";
 
 export default function App() {
+  const { width, height } = useWindowDimensions();
   return (
-    <SafeAreaView>
     <View style={styles.container}>
-      <HeaderBanner/>
-      <Registration/>
-      {/*FOOTER*/}
-    </View>
-    </SafeAreaView>
+      <SafeAreaView>
+        <Registration />
+      </SafeAreaView>
+      </View>
   );
 }
 
